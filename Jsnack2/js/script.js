@@ -52,5 +52,13 @@ var zucchine = [
     varieta : 'Romanesco',
     peso : 450,
     lunghezza : 10
-  },
+  }
 ];
+
+var pesoTotale = 0;
+
+for (var i = 0; i < zucchine.length; i++) {
+  pesoTotale += zucchine[i].peso;
+}
+
+console.log('Il peso di tutte le zucchine è ' + pesoTotale + ' grammi');
