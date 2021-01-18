@@ -54,3 +54,32 @@ var zucchine = [
     lunghezza : 10
   }
 ];
+var zucchineCorte = [];
+var zucchineLunghe = [];
+
+for (var i = 0; i < zucchine.length; i++) {
+  if (zucchine[i].lunghezza <= 15) {
+    zucchineCorte.push(zucchine[i])
+  } else {
+    zucchineLunghe.push(zucchine[i])
+  }
+}
+
+console.log(zucchineCorte);
+console.log(zucchineLunghe);
+
+var pesoCorte = 0;
+
+for (var i = 0; i < zucchineCorte.length; i++) {
+  pesoCorte += zucchineCorte[i].peso;
+}
+
+console.log('Il peso di tutte le zucchine Corte è ' + pesoCorte + ' grammi');
+
+var pesoLunghe = 0;
+
+for (var i = 0; i < zucchineLunghe.length; i++) {
+  pesoLunghe += zucchineLunghe[i].peso;
+}
+
+console.log('Il peso di tutte le zucchine Lunghe è ' + pesoLunghe + ' grammi');
